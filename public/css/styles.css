@@ -1,0 +1,613 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap");
+ */
+/*  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,500&display=swap');
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("../img/cursor_2.png"), auto;
+}
+
+a {
+  cursor: url("../img/cursor_2.png"), auto;
+}
+/* START MENU */
+
+/* A media query that is changing the logo size when the screen is smaller than 1000.9px. */
+@media (max-width: 1000.9px) {
+  #logo {
+    height: 25px;
+    width: 80px;
+  }
+}
+
+/* The dropdown menu. */
+#valori {
+  border: 3px solid white;
+  border-radius: 25px;
+}
+#valori :hover {
+  font-weight: bold;
+}
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f1f1f190;
+  font-family: "Fira Sans", sans-serif;
+}
+.menu-vertical li:hover {
+  background-color: #f1f1f1fd;
+  border-radius: 2px;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#mainNav li:hover .menu-vertical {
+  display: block;
+  padding: 3px;
+  margin: 3px;
+  text-align: center;
+  border-radius: 8px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+}
+.menu-vertical li a {
+  display: block;
+  font-weight: bold;
+  font-size: medium;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+  color: #0f151bb9;
+}
+/* End DROPDOWM */
+
+/* MENU ARRIBA TRASPARRENTE */
+
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #f1f1f190;
+  transition: background-color 0.2s ease;
+  border-radius: 19px;
+  margin: 30px;
+  top: 0;
+  margin-top: 6px;
+}
+
+#mainNav .navbar-brand {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #0875a8;
+}
+/* #mainNav .navbar-nav .nav-item .nav-link.active {
+   color: #54e4d5 !important; 
+} */
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:hover {
+    color: #0985bf;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+  }
+  /* el bordeado blanco */
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #046c9c;
+    border-radius: 20px;
+    background-color: #f1f1f1d3;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 700;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+
+  /* menu scroll */
+  #mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #f1f1f190;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #212529b6;
+  }
+  #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #025f8a;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #14202c9f;
+  }
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #0985bf;
+    border-radius: 30px;
+    background-color: #f1f1f1e7;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+}
+/* END MENU */
+
+/* Contenedores de las imagenes */
+
+#fc1 {
+  background-image: linear-gradient(to right, #088cc4, #04f4e0);
+}
+#fc2 {
+  background-color: #e55352;
+}
+/* MISION Y VISION */
+/* Positioning the text in the middle of the screen.
+*/
+.fc3 {
+  background-image: linear-gradient(to right, #088cc4, #04f4e0);
+}
+.fc3 img {
+  width: 100%;
+  height: 100%;
+}
+.fc3 p {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  left: 59%;
+  right: 23%;
+  bottom: -64%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translate(7%, 3%);
+}
+.fc4 {
+  background-image: linear-gradient(to right, #088cc4, #04f4e0);
+}
+.fc4 img {
+  width: 100%;
+  height: 100%;
+}
+.fc4 p {
+  font-size: 26px;
+  color: white;
+  left: 42%;
+  right: 23%;
+  top: 250%;
+  justify-content: center;
+  position: absolute;
+  transform: translate(38%, 17%);
+}
+
+/* END MISION Y VISION */
+ /* carrusel2 */
+#fc5 {
+  background-image: linear-gradient(to right, #fc8c04, #fcac24);
+}
+#fc5 img {
+  width: 100%;
+  height: 100%;
+}
+
+#fc5 p {
+  font-size: 26px;
+  color: white;
+  position: absolute;
+  top: 69%;
+  left: 50%;
+
+  transform: translate(-10%, 10%);
+}
+#fc5 h1 {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+  transform: translate(24%, 10%);
+  top: 24%;
+}
+ /* endcarrusel2 */
+.fc6 {
+  background-image: linear-gradient(to right, #088cc4, #04f4e0);
+}
+
+/* end contenedores */
+
+/* Positioning CONTACTOS the text in the middle of the screen. */
+#p2 {
+  color: #04a6e1;
+
+  font-size: 27px;
+  transform: translate(-29%, -160%);
+  text-align: center;
+}
+#h2 {
+  color: white;
+  font-size: 33px;
+  transform: translate(7%, -89%);
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+#comenta {
+  transform: translate(386%, -1319%);
+  padding: 4px;
+  width: 299px;
+  height: 46px;
+}
+.btn_2 {
+  color: white;
+  background-color: #54d4fc;
+  border: none;
+  transform: translate(3714%, -1292%);
+  font-size: 31px;
+}
+.btn_2:hover {
+  background-color: white;
+  color: #54d4fc;
+}
+.fc6 p {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+  top: 480%;
+  left: 58%;
+  font-family: "Fira Sans", sans-serif;
+  right: 10%;
+  justify-content: center;
+  transform: translate(-154%, 9%);
+}
+.fc6 h1 {
+  color: white;
+  position: absolute;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  transform: translate(59%, 9%);
+  font-weight: bold;
+  top: 476%;
+}
+
+.btn_1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Fira Sans", sans-serif;
+  top: 516%;
+  right: 9%;
+  position: absolute;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  transform: translate(-390%, -220%);
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 28px;
+  padding: 10px 14px 10px 15px;
+  height: 5%;
+  width: 17%;
+}
+.btn_1:hover {
+  color: #046c9c;
+  border-radius: 28px;
+  background-color: #f1f1f1d3;
+  font-weight: bold;
+  border: none;
+}
+
+/* MEDIA QUERIES */
+/* 1280 */
+@media only screen and (max-width: 1280px) {
+  /* MISION Y VISION */
+  .fc3 p {
+    font-size: 14px;
+    color: white;
+    transform: translate(8%, -105%);
+  }
+  .fc4 p {
+    font-size: 18px;
+    color: white;
+    transform: translate(40%, -190%);
+    align-items: center;
+    justify-content: center;
+  }
+  /* end MISION Y VISION */
+/* carrusel2 */
+  #fc5 p {
+    font-size: 22px;
+    color: white;
+  }
+  #fc5 h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 400;
+    transform: translate(24%, 10%);
+  }
+  /* endcarrusel2 */
+  
+  .fc6 p {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    top: 402%;
+    left: 56%;
+    font-family: "Fira Sans", sans-serif;
+    right: 10%;
+    transform: translate(-139%, 10%);
+  }
+  .fc6 h1 {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    /* top: 396%;  */
+    transform: translate(40%, -1590%);
+  }
+  
+  .btn_1 {
+    color: rgb(255, 255, 255);
+    transform: translate(-320%, -1849%);
+    height: 5%;
+    width: 20%;
+    border-radius: 28px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .btn_1:hover {
+    color: #046c9c;
+    border-radius: 28px;
+    background-color: #f1f1f1d3;
+    font-weight: bold;
+    border: none;
+  }
+  #p2 {
+    font-size: 17px;
+    transform: translate(-26%, -160%);
+    font-weight: 300;
+  }
+  #h2 {
+    color: white;
+    font-size: 26px;
+    transform: translate(7%, -89%);
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #comenta {
+    transform: translate(330%, -1030%);
+    padding: 1px;
+    width: 210px;
+    height: 37px;
+  }
+  .btn_2 {
+    border: none;
+    transform: translate(2869%, -1050%);
+    font-size: 24px;
+  }
+}
+/* end 1280 */
+
+/* 1024px */
+
+@media only screen and (max-width: 1024px) {
+  #valori {
+    border: 3px solid white;
+    border-radius: 20px;
+    height: 47px;
+    margin: auto;
+    word-spacing: 0.25em;
+  }
+  #valori:hover {
+    color: #046c9c;
+    font-weight: bold;
+    background-color: #f1f1f1d3;
+  }
+  /* MISION Y VISION */
+  .fc3 p {
+    font-size: 11px;
+    color: white;
+    transform: translate(7%, -55%);
+
+    text-align: center;
+  }
+  .fc4 p {
+    font-size: 14px;
+    color: white;
+    transform: translate(40%, -120%);
+    align-items: center;
+    justify-content: center;
+  }
+  /* end MISION Y VISION */
+   /* carrusel2 */
+  #fc5 p {
+    font-size: 16px;
+    color: white;
+  }
+  #fc5 h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    transform: translate(20%, 10%);
+  }
+  /* endcarrusel2 */
+  .fc6 p {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 200;
+    left: 56%;
+    font-family: "Fira Sans", sans-serif;
+    right: 10%;
+    transform: translate(-139%, 147%);
+  }
+  .fc6 h1 {
+    color: rgb(211, 45, 45);
+    font-size: 21px;
+    font-weight: bold;
+    transform: translate(50%, -1230%);
+  }
+  .btn_1 {
+    color: rgb(119, 4, 4);
+    transform: translate(-320%, -1110%);
+    height: 6%;
+    width: 20%;
+    border-radius: 28px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  #p2 {
+    font-size: 14px;
+    transform: translate(-26%, 100%);
+    font-weight: 300;
+  }
+  #h2 {
+    color: rgb(82, 13, 13);
+    font-size: 26px;
+    transform: translate(6%, 349%);
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #comenta {
+    transform: translate(280%, -1010%);
+    padding: 1px;
+    width: 200px;
+    height: 30px;
+  }
+  .btn_2 {
+    border: none;
+    transform: translate(2642%, -955%);
+    font-size: 21px;
+  }
+}
+
+/* end 1024px */
+
+@media only screen and (max-width: 380px) {
+  /* 340px */
+  /* MISION Y VISION */
+  .fc3 p {
+    font-size: 4px;
+    color: rgb(250, 250, 250);
+    transform: translate(8%, -1382%);
+  justify-content: center;
+  }
+  .fc4 p {
+    font-size: 6px;
+    color: rgb(255, 255, 255);
+    transform: translate(40%, -1470%);
+    align-items: end;
+    justify-content: center;
+    font-weight: bold;
+  }
+  /* end MISION Y VISION */
+ /* carrusel2 */
+  #fc5 p {
+    font-size: 6px;
+    color: white;
+  }
+  #fc5 h1 {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transform: translate(20%, 10%);
+  }
+   /* endcarrusel2 */
+
+   /* contactos */
+   .fc6 p {
+    position: absolute;
+    color: rgb(25, 4, 116);
+    font-size: 10px;
+    font-weight: 200;
+    left: 56%;
+    font-family: "Fira Sans", sans-serif;
+    right: 10%;
+    transform: translate(-139%, 147%);
+  }
+  .fc6 h1 {
+    color: rgb(211, 45, 45);
+    font-size: 21px;
+    font-weight: bold;
+    transform: translate(50%, -1230%);
+  }
+  .btn_1 {
+    color: rgb(119, 4, 4);
+    transform: translate(-320%, -1110%);
+    height: 6%;
+    width: 20%;
+    border-radius: 28px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  #p2 {
+    font-size: 14px;
+    transform: translate(-26%, 100%);
+    font-weight: 300;
+  }
+  #h2 {
+    color: rgb(82, 13, 13);
+    font-size: 26px;
+    transform: translate(6%, 349%);
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #comenta {
+    transform: translate(390%, -1010%);
+    padding: 1px;
+    width: 60px;
+    height: 10px;
+  }
+  .btn_2 {
+    border: none;
+    transform: translate( 122%, -955%);
+    font-size: 11px;
+  }
+   /* endcontactanos */
+}
+
+/* end  999px*/
+/* colores de ludicme
+
+azul oscuro: #0c8bbf;
+azul-light: #32bbcb;
+azul-verde: #59edd8;
+Salmon: #f79722;
+Rojo: #e55352; */
+/*   background-image: linear-gradient(to right, #0985bf, #54e4d5); */
+/* azul oscuro: #0c8bbf;
+azul-light: #32bbcb;
+azul-verde: #59edd8;
+Salmon: #f79722;
+Rojo: #e55352;
+amarillo oscuro: #fc8c04
+Amarillo claro:#fcac24
+Cursor:#045564
+https://www.youtube.com/watch?v=odtvxsYgAlU */
